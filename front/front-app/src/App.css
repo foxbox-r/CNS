@@ -1,0 +1,128 @@
+*{margin:0;padding:0;box-sizing:border-box;}
+
+.goodSpan{color:green;font-size:14px;}
+.badSpan{color:red;font-size:14px;}
+a{text-decoration:none;}
+input,button,textarea:focus {outline:none;}
+a,button,img,input[type="button"]{cursor:pointer;}
+img{width:100%;}
+.hashtag{color:#4c99e7;}
+a{color:black;}
+
+#App{}
+#header{z-index:3;width:100%;position:fixed;background:white;top:0;box-shadow:0 5px 5px rgba(190, 190, 190,0.5);}
+#main_wrapper{display:flex;flex-direction:row;clear:both;}
+#footer{box-shadow:0 -2px 5px rgba(0,0,0,0.4);background:rgb(201, 201, 201);color:gray;font-size:14px;display:flex;justify-content:center;align-items:center;height:75px;}
+#ZoomImg{position:fixed;top:0;left:0;width:100%;height:100%;background:rgba(0,0,0,0.9);z-index:123;display:flex;justify-content:center;align-items:center;}
+#ZoomImg article img{width:400px;display:block;}
+#ZoomImg article p{color:white;text-align:center;margin-top:15px;}
+
+#main_wrapper{margin-top:60px;background:rgb(241, 241, 241);}
+#main_wrapper .main_child{}
+#main_wrapper #nav{flex-basis:20%;}
+#main_wrapper #article{flex-basis:60%;}
+#main_wrapper #aside{flex-basis:20%;}
+
+#header{}
+#header a{display:flex;width:100px;height:60px;float:left;justify-content:center;align-items:center;text-decoration:none;color:black;font-weight:bold;font-size:20px;}
+#header #header_search_box{width:530px;height:60px;float:left;display:flex;justify-content:center;align-items:center;}
+#header #header_search_box form{width:100%;height:100%;display:flex;justify-content:center;align-items:center;}
+#header #header_search_box form input[type="text"]{padding-left:30px;font-size:20px;;width:85%;height:50px;}
+#header #header_search_box form input[type="submit"]{width:15%;height:50px;border:none;background:white;font-size:20px;font-weight:bold;border-radius:2px;border:1px solid gray;}
+#header #header_search_box form input[type="submit"]:hover{background:rgb(230, 230, 230);;}
+#main_wrapper{}
+#main_wrapper #Home{}
+#main_wrapper #Home{} #Posts{}
+#main_wrapper #Home{} #Posts{} .postCard{box-shadow:2px 2px 5px rgba(0,0,0,0.2);margin:20px auto;width:590px;background-color:white;border-radius:8px;}
+#main_wrapper .postCard>header{padding:10px;}
+#main_wrapper .postCard>header .firstName{float:left;width:30px;height:30px;background:black;color:white;display:flex;justify-content:center;align-items:center;border-radius:50%;}
+#main_wrapper .postCard>header .fullName{float:left;margin-left:20px;height:30px;}
+#main_wrapper .postCard>header .removeButtonDiv{float:right;width:100px;font-size:14px;padding:0;}
+#main_wrapper .postCard>header .removeButtonDiv>button{border-radius:7px;}
+#main_wrapper .postCard>article{clear:both;}
+#main_wrapper .postCard>article>header{padding:10px;}
+#main_wrapper .postCard>article>article{}
+#main_wrapper .postCard>article>article>img{width:100%;}
+#main_wrapper .postCard>article>article>.PostImg_2{display:flex;background:black;align-items:center;}
+#main_wrapper .postCard>article>article>.PostImg_2>img{width:50%;}
+#main_wrapper .postCard>article>article>.PostImg_3{display:flex;background:black;align-items:center;position:relative;}
+#main_wrapper .postCard>article>article>.PostImg_3>img{width:50%;}
+#main_wrapper .postCard>article>article>.PostImg_3>div{position:absolute;color:white;background:rgba(0,0,0,0.8);top:0;right:0;width:50%;height:100%;display:flex;justify-content:center;align-items:center;cursor:pointer;}
+#main_wrapper .postCard>article>article>article{padding:10px;}
+#main_wrapper .postCard>article>article>article>.name{font-size:14px;font-weight:bold;}
+#main_wrapper .postCard>article>article>article>.description{font-size:14px;}
+#main_wrapper .postCard>article>footer{padding:10px;display:flex;justify-content:space-between;}
+#main_wrapper .postCard>footer{padding:0 10px;display:flex;}
+#main_wrapper .postCard>footer button{font-weight:bold;font-size:14px;margin:2px 0;border-radius:5px;background:white;border:none;flex-basis:33.33%;height:45px;display:block;}
+#main_wrapper .postCard>footer button:hover{background:rgb(230, 230, 230);}
+#main_wrapper .postCard>.Comments{padding:10px;}
+#main_wrapper .postCard>.Comments>.Comment{display:flex;margin-bottom:15px;}
+#main_wrapper .postCard>.Comments>.Comment header{margin-right:10px;width:30px;flex-shrink:0;height:30px;border-radius:50%;display:flex;justify-content:center;align-items:center;}
+#main_wrapper .postCard>.Comments>.Comment>article{background:rgb(241, 241, 241);;border-radius:15px;padding:5px 10px;}
+#main_wrapper .postCard>.Comments>.Comment>article>.name{font-size:14px;font-weight:bold;}
+#main_wrapper .postCard>.Comments>.Comment>article>.description{}
+#main_wrapper .postCard>.Comments>.CommentForm{display:flex;}
+#main_wrapper .postCard>.Comments>.CommentForm>header{margin-right:10px;flex-basis:30px;flex-shrink:0;height:30px;border-radius:50%;display:flex;justify-content:center;align-items:center;}
+#main_wrapper .postCard>.Comments>.CommentForm>article{width:90%;}
+#main_wrapper .postCard>.Comments>.CommentForm>article>div>textarea{border:none;width:100%;font-size:16px;font-weight:1000;border-radius:8px;padding:5px 10px;background:rgb(241, 241, 241);}
+
+#main_wrapper #Signup{background:white;width:80%;margin:20px auto;box-shadow:3px 3px 5px rgba(0,0,0,0.2);border-radius:8px;}
+#main_wrapper #Signup h1{text-align:center;padding:30px;}
+#main_wrapper #Signup form{padding-bottom:30px;}
+#main_wrapper #Signup form div{text-align:center;margin-top:10px;}
+#main_wrapper #Signup form div p{width:80%;text-align:left;padding-left:20px;margin:0 auto;}
+#main_wrapper #Signup form div input{width:80%;margin:10px 0;}
+#main_wrapper #Signup form div input[type="text"],input[type="password"]{height:30px;padding:20px 17px;}
+#main_wrapper #Signup form div input[type="submit"]{height:35px;font-size:18px;}
+#main_wrapper #Signup form .checkBoxWrapper{text-align:left;}
+#main_wrapper #Signup form .checkBoxWrapper input{width:20px;margin-left:11.5%;}
+
+
+#main_wrapper #nav{position:relative;}
+#main_wrapper #nav .NavProfile{left:20px;width:300px;margin-top:20px;background:white;border-radius:5px;box-shadow:2px 2px 5px rgba(0,0,0,0.2);position:fixed;}
+#main_wrapper #nav #NavProfile_login{}
+#main_wrapper #nav #NavProfile_login form{}
+#main_wrapper #nav #NavProfile_login form header{text-align:center;padding:10px;}
+#main_wrapper #nav #NavProfile_login form article{}
+#main_wrapper #nav #NavProfile_login form article div{text-align:center;margin:10px 0;}
+#main_wrapper #nav #NavProfile_login form article div p{padding-left:10px;width:90%;margin:0 auto 5px auto;text-align:left;}
+#main_wrapper #nav #NavProfile_login form article div input{width:90%;height:40px;padding-left:10px;}
+#main_wrapper #nav #NavProfile_login form footer{display:flex;flex-direction:row;margin:5px 0;padding:4px;}
+#main_wrapper #nav #NavProfile_login form footer .button{flex-grow:1;}
+#main_wrapper #nav #NavProfile_login form footer .button>a,button{width:100%;height:50px;display:block;border:none;font-size:18px;background:white;}
+#main_wrapper #nav #NavProfile_login form footer .button>a,button:hover{background:rgb(230, 230, 230);}
+#main_wrapper #nav #NavProfile_profile{}
+#main_wrapper #nav #NavProfile_profile header{padding:30px;}
+#main_wrapper #nav #NavProfile_profile header div{margin:0 auto;width:150px;height:150px;background:black;color:white;display:flex;justify-content:center;align-items:center;border-radius:50%;font-size:80px;}
+#main_wrapper #nav #NavProfile_profile article{}
+#main_wrapper #nav #NavProfile_profile article .nameBox{text-align:center;font-size:30px;}
+#main_wrapper #nav #NavProfile_profile article .numberBox{display:flex;}
+#main_wrapper #nav #NavProfile_profile article .numberBox div{flex-basis:50%;text-align:center;padding:10px;}
+#main_wrapper #nav #NavProfile_profile footer{}
+
+#main_wrapper>#article{}
+#main_wrapper>#article>#PostForm{width:590px;margin:20px auto;border-radius:10px;box-shadow:3px 3px 5px  rgba(0,0,0,0.2);background:white;}
+#main_wrapper>#article>#PostForm .PostFormClick{display:flex;justify-content:space-between;padding:10px;}
+#main_wrapper>#article>#PostForm .PostFormClick .profile{flex-basis:40px;height:40px;background:black;color:white;font-size:23px;border-radius:50%;display:flex;justify-content:center;align-items:center;}
+#main_wrapper>#article>#PostForm .PostFormClick .lookLikeInput{flex-basis:92%;background:#F2F3F5;font-size:18px;border-radius:10px;color:gray;display:flex;align-items:center;padding-left:10px;}
+#main_wrapper>#article>#PostForm .PostFormClick .lookLikeInput:hover{background:#d8d9da;color:rgb(121, 121, 121);}
+#main_wrapper>#article>#PostForm #checkHidePostForm{display:none;}
+#main_wrapper>#article>#PostForm .hidePostForm{display:none;}
+#main_wrapper>#article>#PostForm #checkHidePostForm:checked ~ .hidePostForm{z-index:10;position:fixed;background:rgba(230,230,230,0.8);width:100%;height:100%;top:0;left:0;display:flex;justify-content:center;align-items:center;}
+#main_wrapper>#article>#PostForm #checkHidePostForm:checked ~ .hidePostForm>label{width:100%;height:100%;display:flex;justify-content:center;align-items:center;}
+#main_wrapper>#article>#PostForm #checkHidePostForm:checked ~ .hidePostForm>label>article{width:500px;background:white;border-radius:10px;box-shadow:3px 3px 5px  rgba(0,0,0,0.2);padding:10px;}
+#main_wrapper>#article>#PostForm #checkHidePostForm:checked ~ .hidePostForm>label>article>header{text-align:center;font-size:23px;}
+#main_wrapper>#article>#PostForm #checkHidePostForm:checked ~ .hidePostForm>label>article>header>h2{border-bottom:1.6px solid rgba(230,230,230,0.8);padding-bottom:10px;}
+#main_wrapper>#article>#PostForm #checkHidePostForm:checked ~ .hidePostForm>label>article>article{}
+#main_wrapper>#article>#PostForm #checkHidePostForm:checked ~ .hidePostForm>label>article>article p{padding-left:10px;font-size:18px;margin:10px 0;}
+#main_wrapper>#article>#PostForm #checkHidePostForm:checked ~ .hidePostForm>label>article>article input{width:100%;height:40px;font-size:20px;padding-left:10px;border:none;border-bottom:1.6px solid  rgba(230,230,230,0.8);}
+#main_wrapper>#article>#PostForm #checkHidePostForm:checked ~ .hidePostForm>label>article>article textarea{width:100%;height:200px;font-size:17px;padding-left:10px;font-weight:bold;border:none;border-bottom:1.6px solid  rgba(230,230,230,0.8);margin:10px 0;}
+#main_wrapper>#article>#PostForm #checkHidePostForm:checked ~ .hidePostForm>label>article>article .ImageForm{}
+#main_wrapper>#article>#PostForm #checkHidePostForm:checked ~ .hidePostForm>label>article>article .ImageForm .imgBox{text-align:center;padding-top:10px;}
+#main_wrapper>#article>#PostForm #checkHidePostForm:checked ~ .hidePostForm>label>article>article .ImageForm .imgBox img{width:150px;}
+#main_wrapper>#article>#PostForm #checkHidePostForm:checked ~ .hidePostForm>label>article>article .ImageForm .imgBox input{font-size:13px;width:70px;display:block;margin:0 auto;padding:0;height:20px;border-radius:3px;}
+@media screen and (max-width: 768px) {
+    #main_wrapper{flex-direction:column;margin-top:120px;}
+    #main_wrapper>#nav>.NavProfile{position:static;width:80%;margin:20px auto 0 auto;}
+    #header #header_search_box{width:100%;}
+}
